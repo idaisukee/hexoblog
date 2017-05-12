@@ -4,15 +4,15 @@
 
 # Site
 title: Hexo たぬ記
-subtitle:
-description:
+subtitle: subtitle
+description: Hexo たぬ記
 author: INOUE Daisuke Ieremius
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://idaisukee.github.io
 root: /
 permalink: :title/
 permalink_defaults:
