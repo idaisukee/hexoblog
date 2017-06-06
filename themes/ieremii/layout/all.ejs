@@ -1,0 +1,4 @@
+<% var show_posts = site.posts.sort('date', 'desc') %>
+<% show_posts.each(function(post, i){ %>
+	<%- partial('post', { page: post, class_name: 'meta' }) %>
+<% }); %>
