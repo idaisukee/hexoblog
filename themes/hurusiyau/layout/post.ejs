@@ -1,6 +1,8 @@
 <article class="post">
 
-<%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
+	<%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
 
-<%- page.content %>
+	<%- page.content %>
+	<%- partial('_partial/post/tag') %>
+
 </article>
