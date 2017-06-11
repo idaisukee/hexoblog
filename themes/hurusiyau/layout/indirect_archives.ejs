@@ -1,0 +1,10 @@
+<section class="body">
+<% var show_posts = site.posts.sort('date', 'desc') %>
+
+<% show_posts.each(function(post, i){ %>
+
+
+	<span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+
+<% }); %>
+</section>
