@@ -1,10 +1,13 @@
 <section class="body">
-<% var show_posts = site.posts.sort('date', 'desc') %>
+	<% var show_posts = site.posts.sort('date', 'desc') %>
+	<ul>
 
-<% show_posts.each(function(post, i){ %>
+		<% show_posts.each(function(post, i){ %>
 
+			<li>
+				<%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %>
+			</li>
+		<% }); %>
+	</ul>
 
-	<span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
-
-<% }); %>
 </section>
